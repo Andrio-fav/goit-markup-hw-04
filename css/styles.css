@@ -9,11 +9,8 @@ body {
 }
 
 .hdrcontr {
-    
     display: flex;
     align-items: center;
-    height: 72px;
-
 }
 
 .container {
@@ -22,14 +19,12 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
 }
 
 .navig {
     display: flex;
     background: #FFFFFF;
     align-items: center;
-    padding: 24px 0;
 }
 
 .logo {
@@ -46,20 +41,12 @@ body {
 
 .studiologo {
     color: #2e2f42;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 117%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    padding: 24px 0;
 }
 
 .navm {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .nav {
@@ -69,10 +56,15 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    display: block;
 }
 
 .nav:hover,
 .nav:focus {
+    color: #404bbf;
+}
+
+.nav:active {
     color: #404bbf;
 }
 
@@ -97,16 +89,13 @@ img {
 
 .address {
     font-style: normal;
-    display: flex;
     margin-left: auto;
-    padding: 24px 0;
 }
 
 .address-list {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .address-item .link {
@@ -117,6 +106,7 @@ img {
     font-family: inherit;
     align-items: center;
     padding: 24px 0;
+    display: block;
 }
 .address-item .link:hover,
 .address-item .link:focus {
@@ -127,8 +117,9 @@ img {
     background-color: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/icons/people-office\ 1.jpg);
 }
-
+    
 
 
 .hcontr {
@@ -151,7 +142,6 @@ img {
 
 .btn {
     border-radius: 4px;
-    margin-top: 45px;
     margin-left: auto;
     margin-right: auto;
     padding: 16px 32px;
@@ -209,6 +199,8 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
+    width: auto;
+    height: auto;
 }
 
 .htxt {
@@ -216,17 +208,13 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    width: auto;
+    height: auto;
 }
 
 .sect {
     background-color: #F4F4FD;
     padding: 120px 0;
-}
-
-.contrt {
-    padding: 32px 0;
-    text-align: center;
-    margin-bottom: 8px;
 }
 
 .shd {
@@ -240,19 +228,15 @@ img {
     color: #2e2f42;
     background-color: #f4f4fd;
     margin-bottom: 72px;
-    padding-top: 120px;
 }
 
 .tsect {
     display: flex;
     gap: 24px;
-    flex-wrap: wrap;
 }
 
 .lit {
     background-color: #FFFFFF; 
-    width: 264px;
-    height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     flex-basis: calc((100% - 72px) / 4);
@@ -312,13 +296,7 @@ img {
 }
 
 .portfl {
-    margin-top: 72px;
-    gap: 24px;
-    border: 1px solid #e7e9fc;
     width: calc((100% - 48px) / 3);
-    flex-direction: row;
-    flex-wrap: wrap;
-
 }
 
 .ptn {
@@ -355,6 +333,7 @@ img {
 }
 
 .ftxt {
+    width: 264px;
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
@@ -374,10 +353,75 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding: 24px 0;
-    margin-right: 76px;
     display: inline-block;
     margin-bottom: 16px;
 }
 
+.fstxt {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 23px;
+}
 
+
+.slink {
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+.sol1 .slink {
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+    
+.f-socl{
+    gap: 16px;
+    display: flex;
+    align-items: baseline; 
+}
+    
+.sif {
+    transition: color 250ms cubic-bezier (0.4, 0, 0.2, 1);
+    }
+    
+.flink {
+    display: flex;
+    justify-content: center;  
+    align-items: center;   
+    width: 40px;    
+    height: 40px; 
+    border-radius: 50%;  
+    background-color: #4d5ae5;
+}
+    
+.flink:hover,
+.flink:focus {
+    background-color: #31d0aa;  
+}
+    
+.svg-img {
+    fill: #f4f4fd;
+}
+    
+.container-flogo{
+     margin-right: 120px;
+}
+    
+.container.content{
+    display: flex;
+    justify-content: baseline;
+}
