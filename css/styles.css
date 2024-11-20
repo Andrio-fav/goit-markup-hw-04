@@ -467,6 +467,10 @@ img {
     background-color: #4d5ae5;
 }
 
+.p-socl {
+    align-items: baseline;
+    margin-bottom: 16px;
+}
     
 .f-socl{
     gap: 16px;
